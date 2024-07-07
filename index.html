@@ -10,12 +10,15 @@
 
     
     <body>
-        <h1>Hello world</h1>
-        <a href= "https://www.theodinproject.com/about" target="_blank" ref="noopener noreferrer">click me</a>
-        <a href="./pages/about.html">About</a>
-        <img src="./images/dog.jpg" alt="Image of a dog" height="310" width="310">
-
-        <script src = "logic.js"></script>
+        <h1>Play rock paper scissors</h1>
+        <button type="button" onclick="playRound('rock', getComputerChoice())">Rock</button>
+        <button type="button" onclick="playRound('paper', getComputerChoice())">Paper</button>
+        <button type="button" onclick="playRound('scissors', getComputerChoice())">Scissors</button>
+        
+        <div class="board"></div>
+        <div class="score"></div>
+        
+        <script src="logic.js"  ></script>
     </body>
 
 </html> 
